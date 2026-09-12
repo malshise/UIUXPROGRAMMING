@@ -22,34 +22,71 @@ WORN BY— 좋아하는 연예인의 착장 정보를 한눈에 확인
 <header>
    <h1>착장 정보 첮기 서비스</h1>
    <p>좋아하는 연예인의 착장 정보를 한눈에 확인할 수 있습니다. </p>
+
+   <nav aria-label="주요 메뉴">
+       <a href="#about">서비스 소개</a>
+       <a href="#features">기능</a>
+       <a href="#steps">이용 방법</a>
+       <a href="#request">요청하기</a>
+   </nav>
 </header>
 
-<h2>서비스 소개</h2>
-<h3>좋아하는 연예인의 착장 정보를 한눈에 확인하고 구매까지 쉽게.</h3>
+<main>
+   <section id="about">
+      <h2>서비스 소개</h2>
+      <h3>좋아하는 연예인의 착장 정보를 한눈에 확인하고 구매까지 쉽게.</h3>
+      <img src="images/fashion-hero.png" alt="남성 모델">
+   </section>
+   
+   <section id="features">
+      <h2>기능</h2>
+      <ul>
+         <li>
+             <h3>착장 검색・저장</h3>
+             <p>날짜,장소,그룹별 등 궁굼한 착장을 찾아서 마음에 두는 착장을 저장할 수 있습니다.</p>
+         </li>
+         <li>
+            <h3>아이템명, 구매링크 확인</h3>
+            <p>아이템명, 구매링크를 확인하고 쉽게 구매할 수 있습니다.</p>
+         </li>
+         <li>
+            <h3>착장 정보 요청</h3>
+            <p>알고 싶은 착장 정보가 없을 경우, 정보 요청을 할 수 있습니다.</p>
+         </li>
+      </ul>
+   </section>
+   
+   <section id="steps">
+      <h2>이용 방법</h2>
+      <ol>
+         <li>회원가입 및 로그인</li>
+         <li>연예인,장소를 선택합니다.</li>
+         <li>마음에 두는 착장을 저장합니다</li>
+         <li>상세페이지에서 아이템명, 구매링크를 확인합니다.</li>
+         <li>알고 싶은 착장 정보가 없을 경우, 사진을 보내 정보 요청을 합니다.</li>
+      </ol>
+   </section>
 
-<h2>기능</h2>
-<ul>
-   <li>
-       <h3>착장 검색・저장</h3>
-       <p>날짜,장소,그룹별 등 궁굼한 착장을 찾아서 마음에 두는 착장을 저장할 수 있습니다.</p>
-   </li>
-   <li>
-      <h3>아이템명, 구매링크 확인</h3>
-      <p>아이템명, 구매링크를 확인하고 쉽게 구매할 수 있습니다.</p>
-   </li>
-   <li>
-      <h3>착장 정보 요청</h3>
-      <p>알고 싶은 착장 정보가 없을 경우, 정보 요청을 할 수 있습니다.</p>
-   </li>
-</ul>
+   <section id="request">
+      <h2>요청하기</h2>
+      <form>
+         <label for="email">이메일</label>
+         <input type="email" id="email" name="email">
+         <label>사진</label>
+         <input type="file" name="uploaded_file">
+         <label>요청 내용</label>
+         <input type="text" placeholder="입력해주세요.">
+         <button type="submit">요청하기</button>
+      </form>
+   </section>
 
-<h2>이용 방법</h2>
-<ol>
-   <li>회원가입 및 로그인</li>
-   <li>연예인,장소를 선택합니다.</li>
-   <li>마음에 두는 착장을 저장합니다</li>
-   <li>상세페이지에서 아이템명, 구매링크를 확인합니다.</li>
-   <li>알고 싶은 착장 정보가 없을 경우, 사진을 보내 정보 요청을 합니다.</li>
-</ol>
+</main>
+
+<footer>
+   <small>©︎ 2026 착장 정보 찾기 서비스</small>
+</footer>
+
+
+
 </body>
 </html>
