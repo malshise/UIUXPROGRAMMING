@@ -4,6 +4,10 @@
 <head>
    <meta charset="UTF-8">
    <title>WORN BY</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -40,16 +44,16 @@ WORN BY— 좋아하는 연예인의 착장 정보를 한눈에 확인
    
    <section id="features">
       <h2>기능</h2>
-      <ul>
-         <li>
+      <ul class="feature-list">
+         <li class="feature-card">
              <h3>착장 검색・저장</h3>
              <p>날짜,장소,그룹별 등 궁굼한 착장을 찾아서 마음에 두는 착장을 저장할 수 있습니다.</p>
          </li>
-         <li>
+         <li class="feature-card">
             <h3>아이템명, 구매링크 확인</h3>
             <p>아이템명, 구매링크를 확인하고 쉽게 구매할 수 있습니다.</p>
          </li>
-         <li>
+         <li class="feature-card">
             <h3>착장 정보 요청</h3>
             <p>알고 싶은 착장 정보가 없을 경우, 정보 요청을 할 수 있습니다.</p>
          </li>
@@ -58,24 +62,22 @@ WORN BY— 좋아하는 연예인의 착장 정보를 한눈에 확인
    
    <section id="steps">
       <h2>이용 방법</h2>
-      <ol>
-         <li>회원가입 및 로그인</li>
-         <li>연예인,장소를 선택합니다.</li>
-         <li>마음에 두는 착장을 저장합니다</li>
-         <li>상세페이지에서 아이템명, 구매링크를 확인합니다.</li>
-         <li>알고 싶은 착장 정보가 없을 경우, 사진을 보내 정보 요청을 합니다.</li>
+      <ol class="manual-list">
+         <li class="manual-card">STEP1. 회원가입 및 로그인</li>
+         <li class="manual-card">STEP2. 연예인,장소를 선택합니다.</li>
+         <li class="manual-card">STEP3. 마음에 두는 착장을 저장합니다</li>
+         <li class="manual-card">STEP4. 상세페이지에서 아이템명, 구매링크를 확인합니다.</li>
+         <li class="manual-card">TIP. 알고 싶은 착장 정보가 없을 경우, 사진을 보내 정보 요청을 합니다.</li>
       </ol>
    </section>
 
-   <section id="request">
+   <section id="request" class="request-card">
       <h2>요청하기</h2>
       <form>
          <label for="email">이메일</label>
-         <input type="email" id="email" name="email">
-         <label>사진</label>
-         <input type="file" name="uploaded_file">
-         <label>요청 내용</label>
-         <input type="text" placeholder="입력해주세요.">
+         <input type="email" id="email" name="email" type="text" placeholder="xxx@xxx">
+         <label>요청사항</label>
+         <input type="text" placeholder="예:2026/09/25 TWS 도훈 공항패션">
          <button type="submit">요청하기</button>
       </form>
    </section>
