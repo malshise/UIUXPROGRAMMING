@@ -73,6 +73,11 @@ p{
     line-height: 1.7;
 }
 
+.feature-card p{
+    color: #222222;
+    line-height: 1.7;
+}
+
 .feature-list{
     display: flex;
     list-style-type: none;
@@ -87,22 +92,7 @@ p{
     margin-bottom: 16px;
     border: 1px solid #8a8a8a;
     border-radius: 12px;
-    background-color: #fbfbfb;
-}
-
-.manual-list{
-    list-style-type: none;
-    padding-left: 10px;
-    margin: 0px;
-    gap: 16px;
-
-}
-.manual-card{
-    padding: 20px 24px;
-    margin-bottom: 16px;
-    border: 1px solid #8a8a8a;
-    border-radius: 12px;
-    background-color: #fbfbfb;
+    background-color: #c1c1c1;
 }
 
 *,
@@ -112,7 +102,8 @@ p{
 }
 
 .request-card{
-    margin-top: 32px;
+    margin-top: 42px;
+    padding-left: 10px;
     padding: 24px;
     background-color: #fbfbfb;
     border: 1px solid #8a8a8a;
