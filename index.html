@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>WORN BY</title>
+   <title>WORN BY DH</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
@@ -39,8 +39,8 @@ WORN BY— 좋아하는 연예인의 착장 정보를 한눈에 확인
 <main>
    <section id="about">
       <h2>서비스 소개</h2>
-      <h3>좋아하는 연예인의 착장 정보를 한눈에 확인하고 구매까지 쉽게.</h3>
-      <img src="images/fashion-hero.png" alt="연예인 패션 스타일 예시">
+      <h3>투어스 도훈 착장 정보를 한눈에 확인하고 구매까지 쉽게.</h3>
+      <img src="images/1.jpeg" alt="도훈">
    </section>
    
    <section id="features">
@@ -74,13 +74,16 @@ WORN BY— 좋아하는 연예인의 착장 정보를 한눈에 확인
 
    <section id="request" class="request-card">
       <h2>요청하기</h2>
-      <form>
+      <form id="request-form">
          <label for="email">이메일</label>
-         <input type="email" id="email" name="email" type="text" placeholder="xxx@xxx">
+         <input type="email" id="email" name="email" placeholder="xxx@xxx" required>
          <label>요청사항</label>
-         <input type="text" placeholder="예:2026/09/25 TWS 도훈 공항패션">
-         <button type="submit">요청하기</button>
+         <input type="text" id="requestContent" placeholder="예:2026/09/25 TWS 도훈 공항패션" required>
+         <button id="requestButton" type="submit">요청하기</button>
       </form>
+      <p id="requestMessage" aria-live="polite">
+         이메일와 요청사항을 입력해주세요.
+      </p>
    </section>
 
 </main>
@@ -90,6 +93,6 @@ WORN BY— 좋아하는 연예인의 착장 정보를 한눈에 확인
 </footer>
 
 
-
+<script src="script.js"></script>
 </body>
 </html>
