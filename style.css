@@ -8,6 +8,7 @@ body{
 }
 
 header,main,footer{
+    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding-left: 24px;
@@ -28,6 +29,8 @@ section{margin-top: 56px;}
 
 nav{    
     display: flex;
+    /* 자리가 부족하면 카드를 다음 줄로 이동 */
+    flex-wrap: wrap;
     gap: 24px;
     margin-top: 24px;
 }
@@ -79,7 +82,9 @@ p{
 }
 
 .feature-list{
-    display: flex;
+    display: grid;
+ /* 들어갈 수 있는 만큼 열을 만들고, 카드는 최소 260px부터 남은 공간까지 사용합니다. */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     list-style-type: none;
     padding-left: 10px;
     margin: 0px;
@@ -87,7 +92,7 @@ p{
 }
 
 .feature-card{
-    flex: 1;
+    min-width: 0;
     padding: 20px 24px;
     margin-bottom: 16px;
     border: 1px solid #8a8a8a;
@@ -152,4 +157,60 @@ input{
     height: 40px;
     border: 1px solid #171717;
     border-radius: 10px;
+}
+
+/* 웹페이지가 표시되는 가로 폭이 768px 이하일 때만 적용 */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  section {
+    margin-top: 40px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  /* 가로 메뉴를 위에서 아래로 배치 */
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  nav a {
+    padding: 8px 0;
+  }
+
+  /* Grid 카드 목록을 한 열로 고정 */
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* 이메일 입력창과 버튼을 한 열로 배치 */
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input,
+  button {
+    width: 100%;
+  }
+
+  button {
+    min-height: 48px;
+  }
 }
